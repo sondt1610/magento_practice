@@ -1,0 +1,96 @@
+[19-Jun-2018 15:49:29 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Directo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Directo...')
+#2 [internal function]: spl_autoload_call('Magento\\Directo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Directo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Directo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Interception\Config\Config->_inheritIntercept in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[19-Jun-2018 15:49:31 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Directory/Helper/Data/. in [Magento\Directory\Helper\Data\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Directo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Directo...')
+#2 [internal function]: spl_autoload_call('Magento\\Directo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Directo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Directo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Interception\Config\Config->_inheritIntercept in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[19-Jun-2018 16:20:04 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[19-Jun-2018 16:21:06 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:13 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:23 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:24 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:25 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:25 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:25 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:21:26 UTC] PHP Fatal error:  Uncaught Zend_Cache_Exception: cache_dir "/var/www/html/magento_sd/var/cache/" is not writable in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php:209
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache/Backend/File.php(180): Zend_Cache::throwException('cache_dir "/var...')
+#1 /var/www/html/magento_sd/vendor/colinmollenhour/cache-backend-file/File.php(87): Zend_Cache_Backend_File->setCacheDir('/var/www/html/m...')
+#2 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(153): Cm_Cache_Backend_File->__construct(Array)
+#3 /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php(94): Zend_Cache::_makeBackend('Cm_Cache_Backen...', Array, true, true)
+#4 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend/Factory.php(158): Zend_Cache::factory('Magento\\Framewo...', 'Cm_Cache_Backen...', Array, Array, true, true, true)
+#5 /var/www/html/magento_sd/vendor/magento/framework/App/Cache/Frontend in /var/www/html/magento_sd/vendor/magento/zendframework1/library/Zend/Cache.php on line 209
+[19-Jun-2018 16:50:21 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
