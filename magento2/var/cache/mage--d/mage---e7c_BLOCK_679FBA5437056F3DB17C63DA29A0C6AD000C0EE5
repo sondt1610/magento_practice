@@ -1,0 +1,12 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1530191202;s:6:"expire";i:1530277602;s:4:"tags";s:33:"e7c_CAT_P,e7c_BLOCK_HTML,e7c_MAGE";}
+    <div class="block widget block-products-list grid">
+                <div class="block-title">
+            <strong>Deals and Savings</strong>
+        </div>
+                <div class="block-content">
+            <!-- new_products_content_widget_grid-->            <div class="products-grid grid">
+                <ol class="product-items widget-product-grid">
+                                                        </ol>
+            </div>
+                    </div>
+    </div>

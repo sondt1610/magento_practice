@@ -19,7 +19,7 @@ class Index extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        $this->_registry->register('custom_var', 'Test Value');
+        $this->_registry->register('custom_va', 'dsgsd');
         $resultPage = $this->_resultPageFactory->create();
         return $resultPage;
     }

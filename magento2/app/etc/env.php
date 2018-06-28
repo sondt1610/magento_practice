@@ -14,7 +14,11 @@ return [
         'dbname' => 'magento_sd',
         'username' => 'root',
         'password' => '123456',
-        'active' => '1'
+        'active' => '1',
+        'profiler' => [
+          'class' => '\\Magento\\Framework\\DB\\Profiler',
+          'enabled' => true
+        ]
       ]
     ]
   ],
@@ -29,19 +33,19 @@ return [
     'save' => 'files'
   ],
   'cache_types' => [
-    'config' => 0,
-    'layout' => 0,
-    'block_html' => 0,
-    'collections' => 0,
-    'reflection' => 0,
-    'db_ddl' => 0,
-    'eav' => 0,
-    'customer_notification' => 0,
-    'config_integration' => 0,
-    'config_integration_api' => 0,
-    'full_page' => 0,
-    'translate' => 0,
-    'config_webservice' => 0
+    'config' => 1,
+    'layout' => 1,
+    'block_html' => 1,
+    'collections' => 1,
+    'reflection' => 1,
+    'db_ddl' => 1,
+    'eav' => 1,
+    'customer_notification' => 1,
+    'config_integration' => 1,
+    'config_integration_api' => 1,
+    'full_page' => 1,
+    'translate' => 1,
+    'config_webservice' => 1
   ],
   'install' => [
     'date' => 'Tue, 19 Jun 2018 13:43:55 +0000'

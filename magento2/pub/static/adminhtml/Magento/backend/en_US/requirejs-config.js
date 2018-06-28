@@ -22,6 +22,71 @@ require.config(config);
  */
 
 var config = {
+    'shim': {
+        'extjs/ext-tree': [
+            'prototype'
+        ],
+        'extjs/ext-tree-checkbox': [
+            'extjs/ext-tree',
+            'extjs/defaults'
+        ],
+        'jquery/editableMultiselect/js/jquery.editable': [
+            'jquery'
+        ]
+    },
+    'bundles': {
+        'js/theme': [
+            'globalNavigation',
+            'globalSearch',
+            'modalPopup',
+            'useDefault',
+            'loadingPopup',
+            'collapsable'
+        ]
+    },
+    'map': {
+        '*': {
+            'translateInline':      'mage/translate-inline',
+            'form':                 'mage/backend/form',
+            'button':               'mage/backend/button',
+            'accordion':            'mage/accordion',
+            'actionLink':           'mage/backend/action-link',
+            'validation':           'mage/backend/validation',
+            'notification':         'mage/backend/notification',
+            'loader':               'mage/loader_old',
+            'loaderAjax':           'mage/loader_old',
+            'floatingHeader':       'mage/backend/floating-header',
+            'suggest':              'mage/backend/suggest',
+            'mediabrowser':         'jquery/jstree/jquery.jstree',
+            'tabs':                 'mage/backend/tabs',
+            'treeSuggest':          'mage/backend/tree-suggest',
+            'calendar':             'mage/calendar',
+            'dropdown':             'mage/dropdown_old',
+            'collapsible':          'mage/collapsible',
+            'menu':                 'mage/backend/menu',
+            'jstree':               'jquery/jstree/jquery.jstree',
+            'details':              'jquery/jquery.details'
+        }
+    },
+    'deps': [
+        'js/theme',
+        'mage/backend/bootstrap',
+        'mage/adminhtml/globals'
+    ],
+    'paths': {
+        'jquery/ui': 'jquery/jquery-ui-1.9.2'
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
     'waitSeconds': 0,
     'map': {
         '*': {
@@ -89,71 +154,6 @@ require(['jquery'], function ($) {
 
     $.noConflict();
 });
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    'shim': {
-        'extjs/ext-tree': [
-            'prototype'
-        ],
-        'extjs/ext-tree-checkbox': [
-            'extjs/ext-tree',
-            'extjs/defaults'
-        ],
-        'jquery/editableMultiselect/js/jquery.editable': [
-            'jquery'
-        ]
-    },
-    'bundles': {
-        'js/theme': [
-            'globalNavigation',
-            'globalSearch',
-            'modalPopup',
-            'useDefault',
-            'loadingPopup',
-            'collapsable'
-        ]
-    },
-    'map': {
-        '*': {
-            'translateInline':      'mage/translate-inline',
-            'form':                 'mage/backend/form',
-            'button':               'mage/backend/button',
-            'accordion':            'mage/accordion',
-            'actionLink':           'mage/backend/action-link',
-            'validation':           'mage/backend/validation',
-            'notification':         'mage/backend/notification',
-            'loader':               'mage/loader_old',
-            'loaderAjax':           'mage/loader_old',
-            'floatingHeader':       'mage/backend/floating-header',
-            'suggest':              'mage/backend/suggest',
-            'mediabrowser':         'jquery/jstree/jquery.jstree',
-            'tabs':                 'mage/backend/tabs',
-            'treeSuggest':          'mage/backend/tree-suggest',
-            'calendar':             'mage/calendar',
-            'dropdown':             'mage/dropdown_old',
-            'collapsible':          'mage/collapsible',
-            'menu':                 'mage/backend/menu',
-            'jstree':               'jquery/jstree/jquery.jstree',
-            'details':              'jquery/jquery.details'
-        }
-    },
-    'deps': [
-        'js/theme',
-        'mage/backend/bootstrap',
-        'mage/adminhtml/globals'
-    ],
-    'paths': {
-        'jquery/ui': 'jquery/jquery-ui-1.9.2'
-    }
-};
 
 require.config(config);
 })();
@@ -423,6 +423,59 @@ var config = {
     }
 };
 
+require.config(config);
+})();
+(function() {
+/**
+ * Mageplaza
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Mageplaza.com license that is
+ * available through the world-wide-web at this URL:
+ * https://www.mageplaza.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Mageplaza
+ * @package     Mageplaza_Core
+ * @copyright   Copyright (c) Mageplaza (http://www.mageplaza.com/)
+ * @license     https://www.mageplaza.com/LICENSE.txt
+ */
+
+var config = {
+    paths: {
+        'mageplaza/core/jquery/popup': 'Mageplaza_Core/js/jquery.magnific-popup.min',
+        'mageplaza/core/owl.carousel': 'Mageplaza_Core/js/owl.carousel.min',
+        'mageplaza/core/bootstrap': 'Mageplaza_Core/js/bootstrap.min',
+        mpIonRangeSlider: 'Mageplaza_Core/js/ion.rangeSlider.min',
+        touchPunch: 'Mageplaza_Core/js/jquery.ui.touch-punch.min',
+        mpDevbridgeAutocomplete: 'Mageplaza_Core/js/jquery.autocomplete.min'
+    },
+    shim: {
+        "mageplaza/core/jquery/popup": ["jquery"],
+        "mageplaza/core/owl.carousel": ["jquery"],
+        "mageplaza/core/bootstrap": ["jquery"],
+        mpIonRangeSlider: ["jquery"],
+        mpDevbridgeAutocomplete: ["jquery"],
+        touchPunch: ['jquery', 'jquery/ui']
+    }
+};
+
+require.config(config);
+})();
+(function() {
+
+var config = {
+    map: {
+        '*': {
+            mgtdevelopertoolbar: 'Mgt_DeveloperToolbar/js/toolbar'
+        }
+    }
+};
 require.config(config);
 })();
 (function() {

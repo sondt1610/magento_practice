@@ -1,0 +1,235 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1530191203;s:6:"expire";i:1530277603;s:4:"tags";s:108:"e7c_CAT_P,e7c_BLOCK_HTML,e7c_CAT_P_2047,e7c_CAT_P_2048,e7c_CAT_P_2049,e7c_CAT_P_2052,e7c_CAT_P_2054,e7c_MAGE";}
+    <div class="block widget block-products-list grid">
+                <div class="block-title">
+            <strong>Featured Products</strong>
+        </div>
+                <div class="block-content">
+            <!-- new_products_content_widget_grid-->            <div class="products-grid grid">
+                <ol class="product-items widget-product-grid">
+                                                                <li class="product-item">                        <div class="product-item-info">
+                            <a href="http://127.0.0.1/magento_sd/di-n-tho-i-samsung-galaxy-a6-2018.html" class="product-item-photo">
+                                
+<span class="product-image-container"
+      style="width:240px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 125%;">
+        <img class="product-image-photo"
+                        src="http://127.0.0.1/magento_sd/pub/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/s/a/samsung-galaxy-a6-2018-1-400x460.png"
+            width="240"
+            height="300"
+            alt="Điện thoại Samsung Galaxy A5"/></span>
+</span>
+                            </a>
+                            <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Điện thoại Samsung Galaxy A5"
+                                       href="http://127.0.0.1/magento_sd/di-n-tho-i-samsung-galaxy-a6-2018.html"
+                                       class="product-item-link">
+                                        Điện thoại Samsung Galaxy A5                                    </a>
+                                </strong>
+                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2047">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="old-price-2047-widget-product-grid"                data-price-amount="60"
+        data-price-type="finalPrice"
+        class="price-wrapper ">
+        <span class="price">$60.00</span>    </span>
+        </span>
+
+</div>
+                                                                                                    
+                                                                    <div class="product-item-actions">
+                                                                                    <div class="actions-primary">
+                                                                                                                                                            <button class="action tocart primary" data-mage-init='{"redirectUrl":{"url":"http://127.0.0.1/magento_sd/di-n-tho-i-samsung-galaxy-a6-2018.html?options=cart"}}' type="button" title="Add&#x20;to&#x20;Cart">
+                                                            <span>Add to Cart</span>
+                                                        </button>
+                                                                                                                                                </div>
+                                                                                                                            <div class="actions-secondary" data-role="add-to-links">
+                                                                                                    <a href="#"
+                                                       data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/wishlist\/index\/add\/","data":{"product":"2047","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                        <span>Add to Wish List</span>
+                                                    </a>
+                                                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/catalog\/product_compare\/add\/","data":{"product":"2047","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' title="Add&#x20;to&#x20;Compare">
+                                                        <span>Add to Compare</span>
+                                                    </a>
+                                                                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                                                    </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="http://127.0.0.1/magento_sd/di-n-tho-i-nokia-7-plus.html" class="product-item-photo">
+                                
+<span class="product-image-container"
+      style="width:240px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 125%;">
+        <img class="product-image-photo"
+                        src="http://127.0.0.1/magento_sd/pub/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/a/_/a.png"
+            width="240"
+            height="300"
+            alt="Nokia 7 plus phone"/></span>
+</span>
+                            </a>
+                            <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Nokia 7 plus phone"
+                                       href="http://127.0.0.1/magento_sd/di-n-tho-i-nokia-7-plus.html"
+                                       class="product-item-link">
+                                        Nokia 7 plus phone                                    </a>
+                                </strong>
+                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2048">
+    <span class="special-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Special Price</span>
+        <span  id="old-price-2048-widget-product-grid"                data-price-amount="62.3"
+        data-price-type="finalPrice"
+        class="price-wrapper ">
+        <span class="price">$62.30</span>    </span>
+        </span>
+    </span>
+    <span class="old-price">
+        
+
+<span class="price-container price-final_price tax weee"
+        >
+            <span class="price-label">Regular Price</span>
+        <span  id="old-price-2048-widget-product-grid"                data-price-amount="89"
+        data-price-type="oldPrice"
+        class="price-wrapper ">
+        <span class="price">$89.00</span>    </span>
+        </span>
+    </span>
+
+</div>
+                                                                                                    
+                                                                    <div class="product-item-actions">
+                                                                                    <div class="actions-primary">
+                                                                                                                                                                                                                    <button class="action tocart primary" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/checkout\/cart\/add\/uenc\/aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw%2C%2C\/product\/2048\/","data":{"product":"2048","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' type="button" title="Add&#x20;to&#x20;Cart">
+                                                            <span>Add to Cart</span>
+                                                        </button>
+                                                                                                                                                </div>
+                                                                                                                            <div class="actions-secondary" data-role="add-to-links">
+                                                                                                    <a href="#"
+                                                       data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/wishlist\/index\/add\/","data":{"product":"2048","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                        <span>Add to Wish List</span>
+                                                    </a>
+                                                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/catalog\/product_compare\/add\/","data":{"product":"2048","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' title="Add&#x20;to&#x20;Compare">
+                                                        <span>Add to Compare</span>
+                                                    </a>
+                                                                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                                                    </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="http://127.0.0.1/magento_sd/di-n-tho-i-samsung-galaxy-j7-pro.html" class="product-item-photo">
+                                
+<span class="product-image-container"
+      style="width:240px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 125%;">
+        <img class="product-image-photo"
+                        src="http://127.0.0.1/magento_sd/pub/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/c/_/c.png"
+            width="240"
+            height="300"
+            alt=" Điện thoại Samsung Galaxy J7 Pro"/></span>
+</span>
+                            </a>
+                            <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title=" Điện thoại Samsung Galaxy J7 Pro"
+                                       href="http://127.0.0.1/magento_sd/di-n-tho-i-samsung-galaxy-j7-pro.html"
+                                       class="product-item-link">
+                                         Điện thoại Samsung Galaxy J7 Pro                                    </a>
+                                </strong>
+                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2049">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="old-price-2049-widget-product-grid"                data-price-amount="45"
+        data-price-type="finalPrice"
+        class="price-wrapper ">
+        <span class="price">$45.00</span>    </span>
+        </span>
+
+</div>
+                                                                                                    
+                                                                    <div class="product-item-actions">
+                                                                                    <div class="actions-primary">
+                                                                                                                                                                                                                    <button class="action tocart primary" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/checkout\/cart\/add\/uenc\/aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw%2C%2C\/product\/2049\/","data":{"product":"2049","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' type="button" title="Add&#x20;to&#x20;Cart">
+                                                            <span>Add to Cart</span>
+                                                        </button>
+                                                                                                                                                </div>
+                                                                                                                            <div class="actions-secondary" data-role="add-to-links">
+                                                                                                    <a href="#"
+                                                       data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/wishlist\/index\/add\/","data":{"product":"2049","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                        <span>Add to Wish List</span>
+                                                    </a>
+                                                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/catalog\/product_compare\/add\/","data":{"product":"2049","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' title="Add&#x20;to&#x20;Compare">
+                                                        <span>Add to Compare</span>
+                                                    </a>
+                                                                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                                                                    </li><li class="product-item">                        <div class="product-item-info">
+                            <a href="http://127.0.0.1/magento_sd/mainboard-1.html" class="product-item-photo">
+                                
+<span class="product-image-container"
+      style="width:240px;">
+    <span class="product-image-wrapper"
+          style="padding-bottom: 125%;">
+        <img class="product-image-photo"
+                        src="http://127.0.0.1/magento_sd/pub/media/catalog/product/cache/f073062f50e48eb0f0998593e568d857/f/s/fss.jpeg"
+            width="240"
+            height="300"
+            alt="Mainboard 1"/></span>
+</span>
+                            </a>
+                            <div class="product-item-details">
+                                <strong class="product-item-name">
+                                    <a title="Mainboard 1"
+                                       href="http://127.0.0.1/magento_sd/mainboard-1.html"
+                                       class="product-item-link">
+                                        Mainboard 1                                    </a>
+                                </strong>
+                                <div class="price-box price-final_price" data-role="priceBox" data-product-id="2052">
+    
+
+<span class="price-container price-final_price tax weee"
+        >
+        <span  id="old-price-2052-widget-product-grid"                data-price-amount="23"
+        data-price-type="finalPrice"
+        class="price-wrapper ">
+        <span class="price">$23.00</span>    </span>
+        </span>
+
+</div>
+                                                                                                    
+                                                                    <div class="product-item-actions">
+                                                                                    <div class="actions-primary">
+                                                                                                                                                                                                                    <button class="action tocart primary" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/checkout\/cart\/add\/uenc\/aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw%2C%2C\/product\/2052\/","data":{"product":"2052","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' type="button" title="Add&#x20;to&#x20;Cart">
+                                                            <span>Add to Cart</span>
+                                                        </button>
+                                                                                                                                                </div>
+                                                                                                                            <div class="actions-secondary" data-role="add-to-links">
+                                                                                                    <a href="#"
+                                                       data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/wishlist\/index\/add\/","data":{"product":"2052","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' class="action towishlist" data-action="add-to-wishlist" title="Add&#x20;to&#x20;Wish&#x20;List">
+                                                        <span>Add to Wish List</span>
+                                                    </a>
+                                                                                                                                                                                                        <a href="#" class="action tocompare" data-post='{"action":"http:\/\/127.0.0.1\/magento_sd\/catalog\/product_compare\/add\/","data":{"product":"2052","uenc":"aHR0cDovLzEyNy4wLjAuMS9tYWdlbnRvX3NkLw,,"}}' title="Add&#x20;to&#x20;Compare">
+                                                        <span>Add to Compare</span>
+                                                    </a>
+                                                                                            </div>
+                                                                            </div>
+                                                            </div>
+                        </div>
+                        </li>                                    </ol>
+            </div>
+                    </div>
+    </div>
