@@ -13741,5 +13741,77 @@
         ],
         "description": "Vietnamese language package for Magento 2",
         "homepage": "https://www.mageplaza.com"
+    },
+    {
+        "name": "magefan/module-community",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/magefan/module-community.git",
+            "reference": "f0073919536a16b6456dcb90210d501381411954"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/magefan/module-community/zipball/f0073919536a16b6456dcb90210d501381411954",
+            "reference": "f0073919536a16b6456dcb90210d501381411954",
+            "shasum": ""
+        },
+        "require": {
+            "php": "~5.6.5 || >=7.0"
+        },
+        "time": "2018-04-16 18:47:32",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Magefan\\Community\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ]
+    },
+    {
+        "name": "magefan/module-conflict-detector",
+        "version": "2.0.4",
+        "version_normalized": "2.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/magefan/module-conflict-detector.git",
+            "reference": "72e78fdf6c15e91824564e71e40a7bee38057842"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/magefan/module-conflict-detector/zipball/72e78fdf6c15e91824564e71e40a7bee38057842",
+            "reference": "72e78fdf6c15e91824564e71e40a7bee38057842",
+            "shasum": ""
+        },
+        "require": {
+            "magefan/module-community": ">=2.0.1",
+            "php": "~5.6.5 || >=7.0"
+        },
+        "time": "2018-04-25 17:53:24",
+        "type": "magento2-module",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "registration.php"
+            ],
+            "psr-4": {
+                "Magefan\\ConflictDetector\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "OSL-3.0",
+            "AFL-3.0"
+        ],
+        "description": "Detect extension conflicts"
     }
 ]

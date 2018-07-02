@@ -165,6 +165,7 @@ return array(
     'de77ac47fada588c5a9de3aae7cf1dde' => $vendorDir . '/magento/module-catalog-rule-sample-data/registration.php',
     'dca3c9561684e2df7aa04142a7c0cfd7' => $vendorDir . '/magento/module-configurable-sample-data/registration.php',
     '6b5b87bda6fedcf6ef8605219c8b67f2' => $vendorDir . '/mageplaza/module-core/registration.php',
+    '70788e639c80a52aa3e8aec7c3e92618' => $vendorDir . '/magefan/module-community/registration.php',
     'efb1c0737b9e14915954f7954ea42462' => $vendorDir . '/magento/module-bundle-sample-data/registration.php',
     '583682c13632dbb2680535a04562c4c2' => $vendorDir . '/magento/module-cms-sample-data/registration.php',
     'f3d4617c4b29f1082289d89745685dad' => $vendorDir . '/magento/module-widget-sample-data/registration.php',
@@ -182,5 +183,6 @@ return array(
     '25f3f0748dc85c2dd9c5f4e0f91bf9c3' => $vendorDir . '/ho-nl/magento2-templatehints/registration.php',
     '7ec163ad857f3468576f30e4b2006ac8' => $vendorDir . '/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/registration.php',
     'fafc74b18998cb7256cedcfe0ee5fcb3' => $vendorDir . '/mageplaza/magento-2-vietnamese-language-pack/registration.php',
+    '228b0eaa29eaaed41a59d3738a013a88' => $vendorDir . '/magefan/module-conflict-detector/registration.php',
     'b4cf39431a4b949eea8aa69ebb3d39da' => $baseDir . '/app/etc/NonComposerComponentRegistration.php',
 );

@@ -245,3 +245,418 @@ Stack trace:
 #3 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Directo...')
 #4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Directo...')
 #5 /var/www/html/magento_sd/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Interception\Config\Config->_inheritIntercept in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[30-Jun-2018 15:03:58 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ',' or ')' in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 38
+[01-Jul-2018 15:11:11 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:11:34 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:11:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:11:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:11:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:11:59 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:00 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:01 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:29 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:30 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:31 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:39 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:12:40 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:42 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:43 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:15:45 UTC] PHP Fatal error:  Uncaught Error: Class 'Demo\Test\Controller\Index\Mage' not found in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:46
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/App/Action/Action.php(107): Demo\Test\Controller\Index\Index->execute()
+#1 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(58): Magento\Framework\App\Action\Action->dispatch(Object(Magento\Framework\App\Request\Http))
+#2 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(138): Demo\Test\Controller\Index\Index\Interceptor->___callParent('dispatch', Array)
+#3 /var/www/html/magento_sd/vendor/mgtcommerce/module-mgtdevelopertoolbar/src/app/code/Mgt/DeveloperToolbar/Model/App/FrontController/ToolbarPlugin.php(64): Demo\Test\Controller\Index\Index\Interceptor->Magento\Framework\Interception\{closure}(Object(Magento\Framework\App\Request\Http))
+#4 /var/www/html/magento_sd/vendor/magento/framework/Interception/Interceptor.php(135): Mgt\DeveloperToolbar\Mo in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 46
+[01-Jul-2018 15:26:07 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:13
+Stack trace:
+#0 /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php(14): Demo\Test\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#2 / in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 13
+[01-Jul-2018 15:26:08 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:13
+Stack trace:
+#0 /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php(14): Demo\Test\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#2 / in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 13
+[01-Jul-2018 15:26:09 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 14 and defined in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php:13
+Stack trace:
+#0 /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php(14): Demo\Test\Controller\Index\Index->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#2 / in /var/www/html/magento_sd/app/code/Demo/Test/Controller/Index/Index.php on line 13
+[01-Jul-2018 15:26:41 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:42 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:43 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:44 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:56 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:57 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:57 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:57 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:58 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:26:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:37:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:38:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:38:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:38:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:38:00 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:42:32 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:42:34 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:42:35 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:42:36 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:43:46 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:43:48 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:52:10 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:52:27 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 15:52:59 UTC] PHP Fatal error:  Uncaught TypeError: Argument 5 passed to Demo\Test\Controller\Index\Index\Interceptor::__construct() must be an instance of Magento\Catalog\Model\ProductFactory, none given, called in /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 111 and defined in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php:11
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php(111): Demo\Test\Controller\Index\Index\Interceptor->__construct(Object(Magento\Framework\App\Action\Context), Object(Magento\Framework\View\Result\PageFactory), Object(Magento\Framework\Registry), Object(Demo\Test\Model\BannerFactory))
+#1 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Compiled.php(108): Magento\Framework\ObjectManager\Factory\AbstractFactory->createObject('Demo\\Test\\Contr...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/ObjectManager.php(56):  in /var/www/html/magento_sd/generated/code/Demo/Test/Controller/Index/Index/Interceptor.php on line 11
+[01-Jul-2018 16:18:12 UTC] PHP Fatal error:  Uncaught Error: Call to a member function getName() on array in /var/www/html/magento_sd/app/code/Demo/Test/view/frontend/templates/hello.phtml:13
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/View/TemplateEngine/Php.php(59): include()
+#1 /var/www/html/magento_sd/vendor/magento/framework/View/Element/Template.php(270): Magento\Framework\View\TemplateEngine\Php->render(Object(Demo\Test\Block\Helloworld), '/var/www/html/m...', Array)
+#2 /var/www/html/magento_sd/vendor/magento/framework/View/Element/Template.php(300): Magento\Framework\View\Element\Template->fetchView('/var/www/html/m...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/View/Element/AbstractBlock.php(667): Magento\Framework\View\Element\Template->_toHtml()
+#4 /var/www/html/magento_sd/vendor/magento/framework/View/Layout.php(558): Magento\Framework\View\Element\AbstractBlock->toHtml()
+#5 /var/www/html/magento_sd/vendor/magento/framework/View/Layout.php(534): Magento\Framework\View\Layout->_renderBlock('helloworld')
+#6 /va in /var/www/html/magento_sd/app/code/Demo/Test/view/frontend/templates/hello.phtml on line 13
+[02-Jul-2018 02:46:57 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 04:06:30 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 04:20:41 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 04:20:43 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 04:37:36 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/magento_sd/generated/code/Magento/Framework/App/ResourceConnection/. in [Magento\Framework\App\ResourceConnection\Proxy] in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/magento_sd/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Framewo...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Framewo...')
+#2 [internal function]: spl_autoload_call('Magento\\Framewo...')
+#3 /var/www/html/magento_sd/vendor/magento/framework/Code/Reader/ClassReader.php(19): ReflectionClass->__construct('Magento\\Framewo...')
+#4 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Definition/Runtime.php(44): Magento\Framework\Code\Reader\ClassReader->getConstructor('Magento\\Framewo...')
+#5 /var/www/html/magento_sd/vendor/magento/framework/ObjectManager/Factory/Dynamic/Developer.php(48): Magento\Frame in /var/www/html/magento_sd/vendor/magento/framework/Code/Generator.php on line 115
+[02-Jul-2018 04:37:51 UTC] PHP Fatal error:  Cannot declare class Part3\LayoutPractice\Block\Test, because the name is already in use in /var/www/html/magento_sd/app/code/Part3/LayoutPractice/Block/HelloWorld.php on line 34

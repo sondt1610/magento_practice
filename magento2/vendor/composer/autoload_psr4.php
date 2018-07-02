@@ -219,6 +219,8 @@ return array(
     'Magento\\AdvancedPricingImportExport\\' => array($vendorDir . '/magento/module-advanced-pricing-import-export'),
     'Magento\\AdminNotification\\' => array($vendorDir . '/magento/module-admin-notification'),
     'Magento\\' => array($baseDir . '/app/code/Magento'),
+    'Magefan\\ConflictDetector\\' => array($vendorDir . '/magefan/module-conflict-detector'),
+    'Magefan\\Community\\' => array($vendorDir . '/magefan/module-community'),
     'League\\CLImate\\' => array($vendorDir . '/league/climate/src'),
     'Klarna\\Ordermanagement\\' => array($vendorDir . '/klarna/module-ordermanagement'),
     'Klarna\\Kp\\' => array($vendorDir . '/klarna/module-kp'),
