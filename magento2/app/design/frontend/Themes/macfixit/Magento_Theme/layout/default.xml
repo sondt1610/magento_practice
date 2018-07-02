@@ -38,11 +38,11 @@
         <referenceBlock name="wish-list-link" remove="true" />
 
         <!--del messeage-->
-        <referenceBlock name="header">
-            <arguments>
-                <argument name="show_part" xsi:type="string">other</argument>
-            </arguments>
-        </referenceBlock>
+        <!--<referenceBlock name="header">-->
+            <!--<arguments>-->
+                <!--<argument name="show_part" xsi:type="string">other</argument>-->
+            <!--</arguments>-->
+        <!--</referenceBlock>-->
 
         <!--custom link-->
         <referenceContainer name="header.panel">
@@ -54,6 +54,7 @@
         </referenceContainer>
 
         <referenceBlock name="header.links">
+            <block class="Magento\Customer\Block\Account\Customer" name="customer" template="account/customer.phtml" before="-"/>
             <block class="Magento\Framework\View\Element\Html\Link" name="custom-aboutus">
                 <arguments>
                     <argument name="label" xsi:type="string" translate="true">About us</argument>
@@ -72,6 +73,7 @@
                     <argument name="path" xsi:type="string" translate="true">customer/account/create/</argument>
                 </arguments>
             </block>
+            <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link" template="account/link/authorization.phtml"/>
         </referenceBlock>
 
 
@@ -81,8 +83,10 @@
             </arguments>
         </block>
         <move element="header" destination="header.links" before="-"/>
-
-
+        <move element="custom-aboutus" destination="top.links"/>
+        <move element="custom-blog" destination="top.links"/>
+        <!--<move element="custom-account" destination="top.links"/>-->
+        <move element="top.links" destination="customer"/>
         <!-- Xoa block footer -->
         <referenceBlock name="footer_links" remove="true"/>
         <referenceBlock name="report.bugs" remove="true"/>
