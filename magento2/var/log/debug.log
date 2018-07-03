@@ -1,4 +1,0 @@
-[2018-07-02 08:13:14] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["interception","CONFIG"],"mode":"matchingTag"}} []
-[2018-07-02 09:57:02] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http:/","invalidateInfo":{"tags":["interception","CONFIG"],"mode":"matchingTag"}} []
-[2018-07-02 10:08:06] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http://127.0.0.1/magento_sd/","invalidateInfo":{"tags":["interception","CONFIG"],"mode":"matchingTag"}} []
-[2018-07-02 10:10:50] main.DEBUG: cache_invalidate:  {"method":"GET","url":"http://127.0.0.1/magento_sd/","invalidateInfo":{"tags":["interception","CONFIG"],"mode":"matchingTag"}} []

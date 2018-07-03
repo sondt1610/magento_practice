@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Model\Product" type="Part4\LoadProduct\Model\Catalog\Product" />
+</config>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+<type name="Magento\User\Model\User">
+    <arguments>
+        <argument name="userData" xsi:type="object">Part4\LoadProduct\User\Helper\Data</argument>
+    </arguments>
+</type>
+</config>
