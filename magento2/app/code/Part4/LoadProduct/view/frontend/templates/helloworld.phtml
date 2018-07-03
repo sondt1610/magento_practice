@@ -1,0 +1,31 @@
+<h1><?php
+$this->getCatalogSession()->setMyName('Mageplaza');
+echo $block->getCatalogSession()->getMyName();
+echo "<br><br>";
+echo $this->getHelloWorldTxt(); ?></h1>
+<?php
+    $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+    $productRepository = $objectManager->get('\Magento\Catalog\Model\ProductRepository');
+
+    // get product by product id
+    $product = $productRepository->getById(15);
+
+    // get product by product sku
+    $product = $productRepository->get('MT12');
+
+    echo $product->getEntityId() . '<br>';
+    echo $product->getName() . '<br>';
+    echo $product->getSKU() . '<br>';
+    echo $product->getPrice() . '<br>';
+    echo $product->getSpecialPrice() . '<br>';
+    echo $product->getTypeId() . '<br>';
+    echo $product->getProductUrl() . '<br>';
+
+    $product_1 = $this->loadMyProduct('MT12');
+//    print_r($product_abc->getData());
+    echo $product_1->getName() . '<br>';
+
+    $product_2 = $this->getBySku('MT12');
+    echo $product_2->getName() . '<br>';
+?>
