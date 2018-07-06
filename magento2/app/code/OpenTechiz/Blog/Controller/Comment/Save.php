@@ -9,20 +9,27 @@ class Save extends Action
      */
     protected $_resultPageFactory;
     function __construct(
-        \Magento\Framework\App\Action\Context $context
+        \Magento\Framework\App\Action\Context $context,
+        \OpenTechiz\Blog\Model\Post $post
     )
     {
         $this->_resultFactory = $context->getResultFactory();
+        $this->_post = $post;
         parent::__construct($context);
     }
     public function execute()
     {
-        $post = (array) $this->getRequest()->getPost();
-        if (!empty($post)) {
+        $resultRedirect = $this->_resultFactory->create(ResultFactory::TYPE_REDIRECT);
+        $postData = (array) $this->getRequest()->getPost();
+        if (!empty($postData)) {
             // Retrieve your form data
-            $author   = $post['author'];
-            $content    = $post['content'];
-            $post_id = $post['post_id'];
+            $author   = $postData['author'];
+            $content    = $postData['content'];
+            $post_id = $postData['post_id'];
+
+            $this->_post->load($post_id);
+            $urlPost = $this->_post->getUrl();
+
             $comment = $this->_objectManager->create('OpenTechiz\Blog\Model\Comment');
             $comment->setAuthor($author);
             $comment->setContent($content);
@@ -30,8 +37,13 @@ class Save extends Action
             $comment->save();
             // Display the succes form validation message
             $this->messageManager->addSuccessMessage('Comment added succesfully!');
+            if($urlPost)
+            {
+                $resultRedirect->setUrl($urlPost);
+            } else $resultRedirect->setUrl('/magento_sd/blog/');
+            return $resultRedirect;
         }
-        $resultRedirect = $this->_resultFactory->create(ResultFactory::TYPE_REDIRECT);
+
         $resultRedirect->setUrl('/magento_sd/blog/');
         return $resultRedirect;
     }

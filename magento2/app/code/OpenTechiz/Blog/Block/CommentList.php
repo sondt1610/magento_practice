@@ -42,4 +42,13 @@ class CommentList extends \Magento\Framework\View\Element\Template
 		return $this->getData("cmt");
 	}
 
+    public function getTime()
+    {
+
+            $com = $this->_commentCollectionFactory
+                ->create();
+
+            print_r($com);
+    }
+
 } 
