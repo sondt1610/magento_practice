@@ -10,7 +10,8 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
      * Post's Statuses
      */
     const STATUS_ENABLED = 1;
-    const STATUS_DISABLED = 0;
+    const STATUS_DISABLED = 2;
+    const STATUS_PENDING = 0;
     /**#@-*/
 
     /**
@@ -73,7 +74,7 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
      */
     public function getAvailableStatuses()
     {
-        return [self::STATUS_ENABLED => __('Enabled'), self::STATUS_DISABLED => __('Disabled')];
+        return [self::STATUS_ENABLED => __('Enabled'), self::STATUS_DISABLED => __('Disabled'), self::STATUS_PENDING => __('Pending')];
     }
     /**
      * Return unique ID(s) for each object in system
@@ -159,6 +160,15 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
     public function setCreationTime($creation_time)
     {
         return $this->setData(self::CREATION_TIME, $creation_time);
+    }
+
+    function isActive(){
+        return $this->getData(self::IS_ACTIVE);
+    }
+
+    function setIsActive($isActive){
+        $this->setData(self::IS_ACTIVE,$isActive);
+        return $this;
     }
 
 }

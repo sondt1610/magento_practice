@@ -12,6 +12,7 @@ interface CommentInterface
     const AUTHOR         = 'author';
     const POST_ID       = 'post_id';
     const CREATION_TIME = 'creation_time';
+    const IS_ACTIVE	= 'is_active';
 
     /**
      * Get ID
@@ -28,6 +29,8 @@ interface CommentInterface
 
     public function getCreationTime();
 
+    public function isActive();
+
     public function setId($id);
 
     public function setContent($content);
@@ -37,5 +40,7 @@ interface CommentInterface
     public function setPostId($post_id);
 
     public function setCreationTime($creationTime);
+
+    public function setIsActive($isActive);
 
 }
