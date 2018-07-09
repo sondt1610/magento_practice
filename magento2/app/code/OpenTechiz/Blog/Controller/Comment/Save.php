@@ -1,50 +1,79 @@
 <?php
+
 namespace OpenTechiz\Blog\Controller\Comment;
-use \Magento\Framework\App\Action\Action;
-use Magento\Framework\Controller\ResultFactory;
-class Save extends Action
+
+use OpenTechiz\Blog\Model\CommentFactory;
+
+class Save extends \Magento\Framework\App\Action\Action
 {
     /**
-     * @var \Magento\Framework\View\Result\PageFactory
+     * @var \Magento\Framework\Controller\Result\JsonFactory
      */
-    protected $_resultPageFactory;
+    protected $resultJsonFactory;
+    protected $inlineTranslation;
     function __construct(
-        \Magento\Framework\App\Action\Context $context,
-        \OpenTechiz\Blog\Model\Post $post
+        \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory,
+        \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
+        CommentFactory $commentFactory,
+        \Magento\Framework\App\Action\Context $context
     )
     {
-        $this->_resultFactory = $context->getResultFactory();
-        $this->_post = $post;
+        $this->resultJsonFactory = $resultJsonFactory;
+        $this->inlineTranslation = $inlineTranslation;
+        $this->commentFactory = $commentFactory;
         parent::__construct($context);
     }
     public function execute()
     {
-        $resultRedirect = $this->_resultFactory->create(ResultFactory::TYPE_REDIRECT);
-        $postData = (array) $this->getRequest()->getPost();
-        if (!empty($postData)) {
-            // Retrieve your form data
-            $author   = $postData['author'];
-            $content    = $postData['content'];
-            $post_id = $postData['post_id'];
+//        $jsonResultResponse = $this->resultJsonFactory->create();
+//        $error = false;
+//        $message = '';
+//        $post = $this->getRequest()->getPostValue();
+//        var_dump($post);die;
 
-            $this->_post->load($post_id);
-            $urlPost = $this->_post->getUrl();
 
-            $comment = $this->_objectManager->create('OpenTechiz\Blog\Model\Comment');
-            $comment->setAuthor($author);
-            $comment->setContent($content);
-            $comment->setPostID($post_id);
-            $comment->save();
-            // Display the succes form validation message
-            $this->messageManager->addSuccessMessage('Comment added succesfully!');
-            if($urlPost)
-            {
-                $resultRedirect->setUrl($urlPost);
-            } else $resultRedirect->setUrl('/magento_sd/blog/');
-            return $resultRedirect;
+        $error = false;
+        $message = '';
+        $post = $this->getRequest()->getPostValue();
+        if(!$post)
+        {
+            $error = true;
+            $message = "Your submission is not valid. Please try again!";
         }
+        //to avoid inline translation broking ajax response
+        $this->inlineTranslation->suspend();
+        $postObject = new \Magento\Framework\DataObject();
+        $postObject->setData($post);
+        //add validation data code here
+        if(!\Zend_Validate::is(trim($post['author']), 'NotEmpty'))
+        {
+            $error = true;
+            $message = "Author can not be empty!";
+        }
+        // save data to database
+        $author   = $post['author'];
+        $content    = $post['content'];
+        $post_id = $post['post_id'];
+        $comment = $this->commentFactory->create();
+        $comment->load($post_id);
+        $comment->setAuthor($author);
+        $comment->setContent($content);
+        $comment->setPostId($post_id);
+        $comment->save();
 
-        $resultRedirect->setUrl('/magento_sd/blog/');
-        return $resultRedirect;
+        $jsonResultResponse = $this->resultJsonFactory->create();
+        if(!$error)
+        {
+            $jsonResultResponse->setData([
+                'result' => 'success',
+                'message' => 'Thank you for your submission. Our Admins will review and approve shortly'
+            ]);
+        } else {
+            $jsonResultResponse->setData([
+                'result' => 'error',
+                'message' => $message
+            ]);
+        }
+        return $jsonResultResponse;
     }
 }
