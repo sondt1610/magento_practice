@@ -97,6 +97,11 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
         return $this->getData(self::COMMENT_ID);
     }
 
+    public function getEmail()
+    {
+        return $this->getData(self::EMAIL);
+    }
+
 
     public function getContent()
     {
@@ -169,6 +174,11 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
     function setIsActive($isActive){
         $this->setData(self::IS_ACTIVE,$isActive);
         return $this;
+    }
+
+    public function setEmail($email)
+    {
+        return $this->setData(self::EMAIL, $email);
     }
 
 }

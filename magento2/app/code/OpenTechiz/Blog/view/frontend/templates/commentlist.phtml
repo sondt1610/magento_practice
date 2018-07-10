@@ -18,6 +18,10 @@
                 <small><?php echo __('Created at: ') ?> <?php echo $cmt->getCreationTime() ?></small>
             </div>
 
+            <div class="blog-post-item-email">
+                <?php echo $cmt->getEmail() ?>
+            </div>
+
         </li>
     <?php } ?>
 </ul>

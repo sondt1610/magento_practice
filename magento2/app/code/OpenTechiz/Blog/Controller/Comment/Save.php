@@ -11,16 +11,23 @@ class Save extends \Magento\Framework\App\Action\Action
      */
     protected $resultJsonFactory;
     protected $inlineTranslation;
+
+    protected $_transportBuilder;
+    protected $_scopeConfig;
     function __construct(
         \Magento\Framework\Controller\Result\JsonFactory $resultJsonFactory,
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
         CommentFactory $commentFactory,
-        \Magento\Framework\App\Action\Context $context
+        \Magento\Framework\App\Action\Context $context,
+        \Magento\Framework\Mail\Template\TransportBuilder $transportBuilder,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     )
     {
         $this->resultJsonFactory = $resultJsonFactory;
         $this->inlineTranslation = $inlineTranslation;
         $this->commentFactory = $commentFactory;
+        $this->_transportBuilder = $transportBuilder;
+        $this->_scopeConfig = $scopeConfig;
         parent::__construct($context);
     }
     public function execute()
@@ -54,11 +61,13 @@ class Save extends \Magento\Framework\App\Action\Action
         $author   = $post['author'];
         $content    = $post['content'];
         $post_id = $post['post_id'];
+        $email = $post['email'];
         $comment = $this->commentFactory->create();
         $comment->load($post_id);
         $comment->setAuthor($author);
         $comment->setContent($content);
         $comment->setPostId($post_id);
+        $comment->setEmail($email);
         $comment->save();
 
         $jsonResultResponse = $this->resultJsonFactory->create();
@@ -74,6 +83,26 @@ class Save extends \Magento\Framework\App\Action\Action
                 'message' => $message
             ]);
         }
+
+        $sender = [
+            'name' => 'Demo',
+            'email' => 'sondt16101993@gmail.com'
+        ];
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
+        $transport = $this->_transportBuilder
+            ->setTemplateIdentifier($this->_scopeConfig->getValue('blog/general/template', $storeScope))
+            ->setTemplateOptions(
+                [
+                    'area' => \Magento\Framework\App\Area::AREA_FRONTEND,
+                    'store' => \Magento\Store\Model\Store::DEFAULT_STORE_ID,
+                ]
+            )
+            ->setTemplateVars(['name' => $author])
+            ->setFrom($sender)
+            ->addTo($email)
+            ->getTransport()
+            ->sendMessage();
+
         return $jsonResultResponse;
     }
 }
