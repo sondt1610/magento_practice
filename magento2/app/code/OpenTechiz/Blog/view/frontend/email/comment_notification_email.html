@@ -1,11 +1,11 @@
 <!--@subject {{trans	"Your comment is waiting for approval"}} @-->
 <!--@vars {
-"var name":"User Name"
+"var data":"User Name"
 } @-->
 {{template config_path="design/email/header_template"}}
 <table>
     <tr>
-        <td><p class="greeting">{{trans	"Hello %user_name," user_name = $name}}</p></td>
+        <td><p class="greeting">{{trans	"Hello %user_name," user_name=$data}}</p></td>
     </tr>
     <tr class="email-information">
         <td>
