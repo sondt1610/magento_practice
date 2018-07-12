@@ -48,11 +48,7 @@ class Email extends \Magento\Framework\App\Helper\AbstractHelper
                 ->addTo($email)
                 ->getTransport();
             $transport->sendMessage();
-            echo "dcv";
         } catch (\Exception $e) {
-            echo "123";
-            print_r($e->getMessage());
-            die();
             $this->logger->debug($e->getMessage());
         }
     }

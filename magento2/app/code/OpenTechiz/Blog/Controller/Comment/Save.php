@@ -66,20 +66,22 @@ class Save extends \Magento\Framework\App\Action\Action
         $comment->setPostId($post_id);
         $comment->setEmail($email);
         $comment->save();
-        //var_dump($post);die;
-
+        //echo "dsfsd";
+        //print_r($comment->getData());die();
 
         $jsonResultResponse = $this->resultJsonFactory->create();
         if(!$error)
         {
             $jsonResultResponse->setData([
                 'result' => 'success',
-                'message' => 'Thank you for your submission. Our Admins will review and approve shortly'
+                'message' => 'Thank you for your submission. Our Admins will review and approve shortly',
+                'comment'=> $comment->getData()
             ]);
         } else {
             $jsonResultResponse->setData([
                 'result' => 'error',
-                'message' => $message
+                'message' => $message,
+                'comment' => 'null'
             ]);
         }
 
@@ -88,7 +90,7 @@ class Save extends \Magento\Framework\App\Action\Action
             'email' => 'sondt1610@gmail.com'
         ];
 
-        $this->helperEmail->sendEmail($author, $sender, $email);
+//        $this->helperEmail->sendEmail($author, $sender, $email);
 
 
 

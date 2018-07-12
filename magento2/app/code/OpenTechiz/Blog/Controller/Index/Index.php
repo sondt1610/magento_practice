@@ -17,15 +17,15 @@ class Index extends \Magento\Framework\App\Action\Action
 
     public function execute()
     {
-        $to = date("Y-m-d h:i:s"); // current date
-        $from = strtotime('-1 day', strtotime($to));
-        echo $from;
-        echo "dsgs";
-        $from = date('Y-m-d h:i:s', $from); // 1 days before
-        echo $to;
-        echo "dsgs";
-        echo $from;
-        die();
+//        $to = date("Y-m-d h:i:s"); // current date
+//        $from = strtotime('-1 day', strtotime($to));
+//        echo $from;
+//        echo "dsgs";
+//        $from = date('Y-m-d h:i:s', $from); // 1 days before
+//        echo $to;
+//        echo "dsgs";
+//        echo $from;
+//        die();
         $resultPage = $this->_resultPageFactory->create();
         return $resultPage;
     }
