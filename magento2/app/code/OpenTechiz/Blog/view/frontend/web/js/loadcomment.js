@@ -11,7 +11,6 @@ define([
                 var template = mageTemplate('#cmt-not-active');
 
                 var comments = data_comment;
-                console.log(comments);
                 var newField = template({
                     cmt: {
                         author: data_comment['author'],
@@ -19,7 +18,6 @@ define([
                         creation_time: time
                     }
                 });
-                console.log(newField);
                 $('ul#not-active-new').append(newField);
             },
             loadAjax : function(config){

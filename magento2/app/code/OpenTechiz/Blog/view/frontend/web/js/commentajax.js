@@ -25,13 +25,11 @@ define([
                     type: 'POST'
                 }).done(function(data){
                     console.log(data);
-                    console.log('datafggsdg');
                     if(data.result== 'success'){
                         document.getElementById('comment_ajax').reset();
                         $('.note').html(data.message);
                         $('.note').css('color', 'green');
                         loadcomment.loadComments(config,data.comment,data.time);
-                        //var apl = loadcomment;
                     }
                     else {
                         $('.note').html(data.message);
