@@ -68,20 +68,20 @@ class Save extends \Magento\Framework\App\Action\Action
         $comment->save();
         //echo "dsfsd";
         //print_r($comment->getData());die();
-
+        $create_time = date("Y-m-d h:i:s");
         $jsonResultResponse = $this->resultJsonFactory->create();
         if(!$error)
         {
             $jsonResultResponse->setData([
                 'result' => 'success',
                 'message' => 'Thank you for your submission. Our Admins will review and approve shortly',
-                'comment'=> $comment->getData()
+                'comment'=> $comment->getData(),
+                'time' => $create_time
             ]);
         } else {
             $jsonResultResponse->setData([
                 'result' => 'error',
-                'message' => $message,
-                'comment' => 'null'
+                'message' => $message
             ]);
         }
 

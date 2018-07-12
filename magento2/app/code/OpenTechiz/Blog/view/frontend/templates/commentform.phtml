@@ -2,25 +2,14 @@
     {
         "*": {
             "OpenTechiz_Blog/js/commentajax": {
-                "AjaxCommentPostUrl": "<?php echo $block->getFormAction() ?>"
+                "AjaxCommentPostUrl": "<?php echo $block->getFormAction() ?>",
+                "PostId": "<?php echo $block->getPostId() ?>",
+                "LoadUrl": "<?php echo $block->getLoadUrl() ?>",
+                "ActiveUrl": "<?php echo $block->getActiveUrl() ?>"
             }
         }
     }
 </script>
-
-
-<ul class="blog-post-abc" id="data" style="color: red;">
-</ul>
-
-<script id="blog-comment-abc" type="text/x-magento-template">
-    <li class="blog-post-list-item"><%- cmt.author %>
-        <div class="blog-post-item-content"><%- cmt.content %></div>
-<!--        <div class="blog-post-item-meta">-->
-<!--            <small>Created at: <%- cmt.creation_time %></small>-->
-<!--        </div>-->
-    </li>
-</script>
-
 
 <form class="form" method="post" id="comment_ajax">
 

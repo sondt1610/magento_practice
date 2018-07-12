@@ -4,6 +4,7 @@ use OpenTechiz\Blog\Api\Data\PostInterface;
 use OpenTechiz\Blog\Model\ResourceModel\Post\Collection as PostCollection;
 class SaveComment extends \Magento\Framework\View\Element\Template
 {
+    public $resultFactory;
     public function __construct(
         \Magento\Framework\View\Element\Template\Context $context,
         \Magento\Framework\App\RequestInterface $request,
@@ -16,7 +17,15 @@ class SaveComment extends \Magento\Framework\View\Element\Template
     {
         return '/magento_sd/blog/comment/save';
     }
-    public function getPostID()
+    public function getLoadUrl()
+    {
+        return '/magento_sd/blog/comment/load';
+    }
+    public function getActiveUrl()
+    {
+        return '/magento_sd/blog/comment/loadactive';
+    }
+    public function getPostId()
     {
         return $this->_request->getParam('post_id', false);
     }
