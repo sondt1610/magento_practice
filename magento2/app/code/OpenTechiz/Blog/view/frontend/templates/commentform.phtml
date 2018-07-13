@@ -9,13 +9,14 @@
         }
     }
 </script>
-
+<?php $helper = $this->helper('OpenTechiz\Blog\Helper\UserInfo'); ?>
 <form class="form" method="post" id="comment_ajax">
 
     <fieldset class="fieldset">
         <legend class="legend"><span><?php /* @escapeNotVerified */ echo __('Add new comment') ?></span></legend><br>
+        <div class="note"></div>
+        <?php if(!$helper->isLoggedIn()) { ?>
         <div class="field required">
-            <div class="note"></div>
             <label for="author" class="label">
                 <span><?php /* @escapeNotVerified */ echo __('Name') ?></span>
             </label>
@@ -26,6 +27,7 @@
                        class="input-text" width="50%">
             </div>
         </div>
+        <?php } ?>
         <div class="field required">
             <label for="content" class="label">
                 <span><?php /* @escapeNotVerified */ echo __('Content') ?></span>
@@ -35,12 +37,14 @@
                 <textarea id="content" name="content" class="input-text"></textarea>
             </div>
         </div>
+        <?php if(!$helper->isLoggedIn()) { ?>
         <div class="field email required">
             <label class="label" for="email"><span><?= $block->escapeHtml(__('Email')) ?></span></label>
             <div class="control">
                 <input name="email" id="email" title="<?= $block->escapeHtmlAttr(__('Email')) ?>" value="<?= $block->escapeHtmlAttr($this->helper('Magento\Contact\Helper\Data')->getPostValue('email') ?: $this->helper('Magento\Contact\Helper\Data')->getUserEmail()) ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
             </div>
         </div>
+        <?php } ?>
     </fieldset>
     <input type="hidden" name="post_id" value="<?php echo $block->getPostID() ?>"/>
     <div class="actions-toolbar">

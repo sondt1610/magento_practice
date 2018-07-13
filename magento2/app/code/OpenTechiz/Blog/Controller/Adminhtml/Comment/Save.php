@@ -39,7 +39,7 @@ class Save extends Action
 
             // Init model and load by ID if exists
             $model = $this->_objectManager->create('OpenTechiz\Blog\Model\Comment');
-            $id = $this->getRequest()->getParam('id');
+            $id = $this->getRequest()->getParam('comment_id');
             if ($id) {
                 $model->load($id);
             }
@@ -48,8 +48,15 @@ class Save extends Action
                 // Redirect to Edit page if has error
                 return $resultRedirect->setPath('*/*/edit', ['id' => $model->getId(), '_current' => true]);
             }
+//            var_dump($model->getData());
+//            echo "sdfsd";
+//            var_dump($this->getRequest()->getPostValue());die();
             // Update model
             $model->setData($data);
+            $this->_eventManager->dispatch(
+                'blog_comment_prepare_save',
+                ['comment' => $model, 'request' => $this->getRequest()]
+            );
             // Save data to database
             try {
                 $model->save();

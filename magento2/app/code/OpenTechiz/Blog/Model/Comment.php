@@ -181,4 +181,13 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
         return $this->setData(self::EMAIL, $email);
     }
 
+    function setUserID($userID){
+        $this->setData(self::USER_ID,$userID);
+        return $this;
+    }
+
+    function getUserID(){
+        return $this->getData(self::USER_ID);
+    }
+
 }

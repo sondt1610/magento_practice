@@ -14,6 +14,7 @@ interface CommentInterface
     const CREATION_TIME = 'creation_time';
     const IS_ACTIVE	= 'is_active';
     const EMAIL = 'email';
+    const USER_ID = 'user_id';
 
     /**
      * Get ID
@@ -32,6 +33,8 @@ interface CommentInterface
 
     public function getCreationTime();
 
+    public function getUserID();
+
     public function isActive();
 
     public function setId($id);
@@ -47,5 +50,7 @@ interface CommentInterface
     public function setIsActive($isActive);
 
     public function setEmail($email);
+
+    public function setUserID($userID);
 
 }

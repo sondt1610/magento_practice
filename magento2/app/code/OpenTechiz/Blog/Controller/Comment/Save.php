@@ -11,6 +11,7 @@ class Save extends \Magento\Framework\App\Action\Action
      */
     protected $resultJsonFactory;
     protected $inlineTranslation;
+    protected $_customerSession;
 
     public $helperEmail;
     function __construct(
@@ -18,6 +19,7 @@ class Save extends \Magento\Framework\App\Action\Action
         \Magento\Framework\Translate\Inline\StateInterface $inlineTranslation,
         CommentFactory $commentFactory,
         \Magento\Framework\App\Action\Context $context,
+        \Magento\Customer\Model\Session $customerSession,
         Email $helperEmail
     )
     {
@@ -25,6 +27,7 @@ class Save extends \Magento\Framework\App\Action\Action
         $this->inlineTranslation = $inlineTranslation;
         $this->commentFactory = $commentFactory;
         $this->helperEmail = $helperEmail;
+        $this->_customerSession = $customerSession;
         parent::__construct($context);
     }
     public function execute()
@@ -48,12 +51,24 @@ class Save extends \Magento\Framework\App\Action\Action
         $this->inlineTranslation->suspend();
         $postObject = new \Magento\Framework\DataObject();
         $postObject->setData($post);
+
         //add validation data code here
-        if(!\Zend_Validate::is(trim($post['author']), 'NotEmpty'))
+        $customer = null;
+        if($this->_customerSession->isLoggedIn())
         {
-            $error = true;
-            $message = "Author can not be empty!";
+            $customer = $this->_customerSession->getCustomer();
+            $post['author'] = $customer->getName();
+            $post['email'] = $customer->getEmail();
+            $post['user_id'] = $customer->getId();
+            //var_dump($post);die();
         }
+        else if(!\Zend_Validate::is(trim($post['author']), 'NotEmpty'))
+        {
+            // validate data
+            $error = true;
+            $message = "Name can not be empty!";
+        }
+        //var_dump($post);die();
         // save data to database
         $author   = $post['author'];
         $content    = $post['content'];
@@ -65,6 +80,9 @@ class Save extends \Magento\Framework\App\Action\Action
         $comment->setContent($content);
         $comment->setPostId($post_id);
         $comment->setEmail($email);
+        if(isset($post['user_id'])){
+            $comment->setUserID($post['user_id']);
+        }
         $comment->save();
         //echo "dsfsd";
         //print_r($comment->getData());die();
