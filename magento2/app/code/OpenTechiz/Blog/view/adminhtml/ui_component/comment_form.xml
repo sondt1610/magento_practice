@@ -110,6 +110,36 @@
                 <dataScope>post_id</dataScope>
             </settings>
         </field>
+        <field name="user_id" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">opentechiz_post_comment</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">User Id</label>
+                <dataScope>user_id</dataScope>
+            </settings>
+        </field>
+        <field name="email" formElement="input">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">opentechiz_post_comment</item>
+                </item>
+            </argument>
+            <settings>
+                <validation>
+                    <rule name="required-entry" xsi:type="boolean">true</rule>
+                </validation>
+                <dataType>text</dataType>
+                <label translate="true">Email</label>
+                <dataScope>email</dataScope>
+            </settings>
+        </field>
         <field name="author" formElement="input">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">

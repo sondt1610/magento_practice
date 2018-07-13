@@ -86,6 +86,13 @@
                     <label translate="true">Delete</label>
                 </settings>
             </action>
+            <action name="pending">
+                <settings>
+                    <url path="blog/comment/massPending"/>
+                    <type>pending</type>
+                    <label translate="true">Pending</label>
+                </settings>
+            </action>
             <action name="disable">
                 <settings>
                     <url path="blog/comment/massDisable"/>
@@ -174,6 +181,18 @@
                 <label translate="true">Author</label>
             </settings>
         </column>
+        <column name="email">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">Email</label>
+            </settings>
+        </column>
         <column name="post_id">
             <settings>
                 <filter>text</filter>
@@ -184,6 +203,18 @@
                     <editorType>text</editorType>
                 </editor>
                 <label translate="true">Post Id</label>
+            </settings>
+        </column>
+        <column name="user_id">
+            <settings>
+                <filter>text</filter>
+                <editor>
+                    <validation>
+                        <rule name="required-entry" xsi:type="boolean">true</rule>
+                    </validation>
+                    <editorType>text</editorType>
+                </editor>
+                <label translate="true">User Id</label>
             </settings>
         </column>
         <column name="is_active" component="Magento_Ui/js/grid/columns/select">

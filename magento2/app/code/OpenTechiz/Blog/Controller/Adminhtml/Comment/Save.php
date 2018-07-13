@@ -53,7 +53,7 @@ class Save extends Action
             // Save data to database
             try {
                 $model->save();
-                $this->messageManager->addSuccess(__('You saved the image.'));
+                $this->messageManager->addSuccess(__('You saved the comment.'));
                 $this->dataPersistor->clear('banner');
                 if ($this->getRequest()->getParam('back')) {
                     return $resultRedirect->setPath('*/*/edit', ['id' => $model->getId(), '_current' => true]);
