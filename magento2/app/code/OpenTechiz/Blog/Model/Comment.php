@@ -17,19 +17,19 @@ class Comment extends \Magento\Framework\Model\AbstractModel implements CommentI
     /**
      * CMS page cache tag
      */
-    const CACHE_TAG = 'post_comment';
-
+    const CACHE_TAG = 'opentechiz_post_comment';
+    const CACHE_COMMENT_POST_TAG = "opentechiz_blog_comment_post";
     /**
      * @var string
      */
-    protected $_cacheTag = 'post_comment';
+    protected $_cacheTag = 'opentechiz_post_comment';
 
     /**
      * Prefix of model events names
      *
      * @var string
      */
-    protected $_eventPrefix = 'post_comment';
+    protected $_eventPrefix = 'opentechiz_post_comment';
 
     /**
      * @var \Magento\Framework\UrlInterface

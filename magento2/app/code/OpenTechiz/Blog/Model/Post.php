@@ -16,19 +16,19 @@ class Post  extends \Magento\Framework\Model\AbstractModel implements PostInterf
     /**
      * CMS page cache tag
      */
-    const CACHE_TAG = 'blog_post';
-
+    const CACHE_TAG = 'opentechiz_blog_post';
+    const CACHE_POST_COMMENT_TAG = "opentechiz_blog_post_comment";
     /**
      * @var string
      */
-    protected $_cacheTag = 'blog_post';
+    protected $_cacheTag = 'opentechiz_blog_post';
 
     /**
      * Prefix of model events names
      *
      * @var string
      */
-    protected $_eventPrefix = 'blog_post';
+    protected $_eventPrefix = 'opentechiz_blog_post';
 
     /**
      * @var \Magento\Framework\UrlInterface

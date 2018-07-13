@@ -1,5 +1,9 @@
 <?php /** @var $block \OpenTechiz\Blog\Block\PostList */ ?>
 <h1><?php echo __('Latest Blog Posts') ?></h1>
+<?php
+//    print_r($block->getIdentities());
+//    die();
+?>
 <ul class="blog-post-list">
     <?php /** @var $post \OpenTechiz\Blog\Model\Post */ ?>
     <?php foreach ($block->getPosts() as $post): ?>

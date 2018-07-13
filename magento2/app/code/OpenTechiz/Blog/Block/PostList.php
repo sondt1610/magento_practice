@@ -3,8 +3,8 @@ namespace OpenTechiz\Blog\Block;
 
 use OpenTechiz\Blog\Api\Data\PostInterface;
 use OpenTechiz\Blog\Model\ResourceModel\Post\Collection as PostCollection;
-
-class PostList extends \Magento\Framework\View\Element\Template
+use Magento\Framework\DataObject\IdentityInterface;
+class PostList extends \Magento\Framework\View\Element\Template implements IdentityInterface
 {
 
     protected $_postCollectionFactory;
@@ -35,5 +35,14 @@ class PostList extends \Magento\Framework\View\Element\Template
             $this->setData('posts', $posts);
         }
         return $this->getData('posts');
+    }
+    public function getIdentities()
+    {
+        $identities = [];
+        $posts = $this->getPosts();
+        foreach ($posts as $post) {
+            $identities = array_merge($identities, $post->getIdentities());
+        }
+        return $identities;
     }
 }

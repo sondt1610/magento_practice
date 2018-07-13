@@ -2,8 +2,8 @@
 namespace OpenTechiz\Blog\Block;
 use OpenTechiz\Blog\Api\Data\CommentInterface;
 use OpenTechiz\Blog\Model\ResourceModel\Comment\Collection as CommentCollection;
-
-class CommentList extends \Magento\Framework\View\Element\Template
+use Magento\Framework\DataObject\IdentityInterface;
+class CommentList extends \Magento\Framework\View\Element\Template implements IdentityInterface
 {
     protected $_commentCollectionFactory;
 
@@ -33,6 +33,7 @@ class CommentList extends \Magento\Framework\View\Element\Template
             $comments = $this->_commentCollectionFactory
                 ->create()
                 ->addFilter('post_id', $post_id)
+                ->addFieldToFilter('is_active', 1)
                 ->addOrder(
                         CommentInterface::CREATION_TIME,
                         CommentCollection::SORT_ORDER_DESC
@@ -49,6 +50,15 @@ class CommentList extends \Magento\Framework\View\Element\Template
                 ->create();
 
             print_r($com);
+    }
+    public function getIdentities()
+    {
+        $identities = [];
+        foreach ($this->getComments() as $comment) {
+            $identities = array_merge($identities, $comment->getIdentities());
+        }
+        $identities[] = \OpenTechiz\Blog\Model\Comment::CACHE_COMMENT_POST_TAG.'_'.$this->getPostID();
+        return $identities;
     }
 
 } 

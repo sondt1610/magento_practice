@@ -19,12 +19,7 @@ class SaveComment extends \Magento\Framework\View\Element\Template
     }
     public function getLoadUrl()
     {
-        $url = $this->getUrl('*/*', ['_direct' => 'blog/comment/load', '_use_rewrite' => true]);
-        return $url;
-    }
-    public function getActiveUrl()
-    {
-        $url = $this->getUrl().'blog/comment/loadactive';
+        $url = $this->getUrl().'blog/comment/load';
         return $url;
     }
     public function getPostId()

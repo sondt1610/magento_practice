@@ -41,28 +41,6 @@ define([
                         $('ul#not-active').append(newField);
                     });
                 });
-            },
-            loadActive : function(config){
-                var ActiveUrl = config.ActiveUrl;
-                var PostId = config.PostId;
-                $.ajax({
-                    url: ActiveUrl,
-                    type: 'POST',
-                    data: {
-                        post_id: PostId
-                    }
-                }).done(function(data){
-                    var template = mageTemplate('#cmt-not-active');
-                    if(data==false) return false;
-                    var comments = data.items;
-                    comments.forEach(function(cmt){
-                        var newField = template({
-                            cmt: cmt
-                        });
-
-                        $('ul#active').append(newField);
-                    });
-                });
             }
         };
 });

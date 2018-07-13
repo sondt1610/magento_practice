@@ -10,7 +10,6 @@ define([
         var AjaxCommentPostUrl = config.AjaxCommentPostUrl;
         var dataForm = $('#comment_ajax');
         loadcomment.loadAjax(config);
-        loadcomment.loadActive(config);
         dataForm.mage('validation', {});
 
         $(document).on('click', '.submit',function(){
