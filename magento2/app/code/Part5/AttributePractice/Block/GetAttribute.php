@@ -13,6 +13,6 @@ class GetAttribute extends \Magento\Framework\View\Element\Template
         $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
         $addressInformation = $objectManager->create('Magento\Checkout\Api\Data\ShippingInformationInterface');
         $extAttributes = $addressInformation->getExtensionAttributes();
-        $selectedShipping = $extAttributes->getCustomShippingCharge();
+        $selectedShipping = $extAttributes->getCustomShippingCharge()->getData();
     }
 }
