@@ -3,7 +3,15 @@
 <H4><?php echo __('Lastest Comment For Post ID ') . $block->getPostID() ?></H4>
 
 <?php
-$comments = $block->getComments(); ?>
+$comments = $block->getComments();
+//echo "<pre>";
+//var_dump($comments->getData());
+//echo "</pre>";
+//echo "sfs";
+//echo "<pre>";
+//var_dump($block->getCmt()->getData());
+//echo "</pre>";
+?>
 <?php if($comments->count()>0){ ?>
     <ul class="blog-post-list">
         <?php foreach ($comments as $cmt) { ?>

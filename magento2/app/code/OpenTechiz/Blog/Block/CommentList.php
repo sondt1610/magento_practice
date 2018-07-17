@@ -43,6 +43,22 @@ class CommentList extends \Magento\Framework\View\Element\Template implements Id
 		return $this->getData("cmt");
 	}
 
+    public function getCmt()
+    {
+        $post_id = $this->getPostId();
+        if(!$this->hasData("mmm")) {
+            $comments = $this->_commentCollectionFactory
+                ->create()
+                ->addFilter('post_id', $post_id)
+                ->addOrder(
+                    CommentInterface::CREATION_TIME,
+                    CommentCollection::SORT_ORDER_DESC
+                );
+            $this->setData("mmm",$comments);
+        }
+        return $this->getData("mmm");
+    }
+
     public function getTime()
     {
 
@@ -54,10 +70,10 @@ class CommentList extends \Magento\Framework\View\Element\Template implements Id
     public function getIdentities()
     {
         $identities = [];
-        foreach ($this->getComments() as $comment) {
+        foreach ($this->getCmt() as $comment) {
             $identities = array_merge($identities, $comment->getIdentities());
         }
-        $identities[] = \OpenTechiz\Blog\Model\Comment::CACHE_COMMENT_POST_TAG.'_'.$this->getPostID();
+        $identities[] = \OpenTechiz\Blog\Model\Comment::CACHE_TAG.'_'.'list';
         return $identities;
     }
 

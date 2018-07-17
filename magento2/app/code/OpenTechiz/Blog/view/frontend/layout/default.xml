@@ -11,7 +11,7 @@
                                 <item name="component" xsi:type="string">OpenTechiz_Blog/js/view/custom_section</item>
                             </item>
                         </item>
-                    </argument>1
+                    </argument>
                 </arguments>
             </block>
         </referenceContainer>

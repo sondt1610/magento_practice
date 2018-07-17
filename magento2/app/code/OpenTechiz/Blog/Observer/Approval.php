@@ -48,7 +48,7 @@ class Approval implements ObserverInterface
         $post = $this->_postFactory->create()->load($post_id);
         $postTitle = $post->getTitle();
         $noti = $this->_notiFactory->create();
-        $content = "Your comment ID: $comment_id at Post: $postTitle has been approved by Admin, status $newStatus";
+        $content = "sfsf";
         $noti->setContent($content);
         $noti->setUserID($user_id);
         $noti->setCommentID($comment_id);
@@ -56,7 +56,7 @@ class Approval implements ObserverInterface
         $noti->save();
 
         // clean cache
-        $this->_cacheContext->registerEntities(\OpenTechiz\Blog\Model\Post::CACHE_TAG, [$post_id]);
+        $this->_cacheContext->registerEntities(\OpenTechiz\Blog\Model\Comment::CACHE_TAG, ['list']);
         $this->_eventManager->dispatch('clean_cache_by_tags', ['object' => $this->_cacheContext]);
     }
 }
